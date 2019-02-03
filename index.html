@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+</head>
+<body>
+    <input type="text" id="inputLog"><button onclick="sendLog()">LOG</button>
+    <script>
+            var connection = new WebSocket('wss://iwl4ls14zi.execute-api.ap-south-1.amazonaws.com/dev');
+            // When the connection is open, send some data to the server
+            connection.onopen = function () {
+                connection.send({"action":"log", "data":"test log"}); // Send the message 'Ping' to the server
+            };
+    
+            // Log errors
+            connection.onerror = function (error) {
+                console.log('WebSocket Error ' + error);
+            };
+            function sendLog(){
+                connection.send(JSON.stringify({"action":"log", "data":`${document.querySelector("#inputLog").value}`}));
+            }
+        </script>
+</body>
+</html>
