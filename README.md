@@ -21,4 +21,4 @@ Connection URL: https://iwl4ls14zi.execute-api.ap-south-1.amazonaws.com/dev/@con
 
 wscat -c wss://iwl4ls14zi.execute-api.ap-south-1.amazonaws.com/dev
 
-> {"action":"sendmessage", "data":"hello world"}
+```>{"action":"log", "data":"test log"}```
