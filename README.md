@@ -15,5 +15,10 @@ https://github.com/aws-samples/simple-websockets-chat-app
 WebSocket URL: wss://iwl4ls14zi.execute-api.ap-south-1.amazonaws.com/dev
 Connection URL: https://iwl4ls14zi.execute-api.ap-south-1.amazonaws.com/dev/@connections
 
-# EXECUTE
+# RUN
+
+```$ npm install -g wscat```
+
 wscat -c wss://iwl4ls14zi.execute-api.ap-south-1.amazonaws.com/dev
+
+> {"action":"sendmessage", "data":"hello world"}
