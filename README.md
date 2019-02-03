@@ -25,7 +25,7 @@ wscat -c wss://iwl4ls14zi.execute-api.ap-south-1.amazonaws.com/dev
 
 # FROM LOCALHOST
 
-```npm i serve```
+```npm i -g serve```
 
 you can run this command inside your project's directory:
 
