@@ -24,8 +24,10 @@ wscat -c wss://iwl4ls14zi.execute-api.ap-south-1.amazonaws.com/dev
 ```>{"action":"log", "data":"test log"}```
 
 # FROM LOCALHOST
-Run CLI as admin then
-```npm install -g simple-https-server```
-Then run simple-https-server in folder you wish to be served. Page will be hosted at https://localhost:8000 (don't forget the 's' httpS://)
 
+```npm i serve```
+
+you can run this command inside your project's directory:
+
+```serve```
 
