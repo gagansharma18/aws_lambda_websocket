@@ -10,3 +10,10 @@ https://serverlessrepo.aws.amazon.com/applications/arn:aws:serverlessrepo:us-eas
 
 # GIT REPO
 https://github.com/aws-samples/simple-websockets-chat-app
+
+# UI LOGGER
+WebSocket URL: wss://iwl4ls14zi.execute-api.ap-south-1.amazonaws.com/dev
+Connection URL: https://iwl4ls14zi.execute-api.ap-south-1.amazonaws.com/dev/@connections
+
+# EXECUTE
+wscat -c wss://iwl4ls14zi.execute-api.ap-south-1.amazonaws.com/dev
